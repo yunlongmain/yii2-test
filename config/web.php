@@ -48,6 +48,10 @@ $config = [
         */
     ],
     'params' => $params,
+//    'catchAll' => [
+//        'site/log',
+//        'msg' => 12,
+//    ],
 ];
 
 if (YII_ENV_DEV) {

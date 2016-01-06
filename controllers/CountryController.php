@@ -32,6 +32,7 @@ class CountryController extends Controller
      */
     public function actionIndex()
     {
+        yii::warning('yyy aaa ',__METHOD__);
         $searchModel = new CountrySearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 

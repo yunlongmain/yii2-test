@@ -97,6 +97,10 @@ class SiteController extends Controller
         return $this->render('say',['message' => $message]);
     }
 
+    public function actionLog($msg){
+        yii::warning('in actionLog '.$msg);
+    }
+
     public function actionEntry()
     {
         $model = new EntryForm;
