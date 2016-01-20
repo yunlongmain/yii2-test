@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use yii\jui\DatePicker;
 
 $this->title = 'About';
 $this->params['breadcrumbs'][] = $this->title;
@@ -16,3 +17,5 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <code><?= __FILE__ ?></code>
 </div>
+
+<?= DatePicker::widget(['name' => 'date']) ?>
